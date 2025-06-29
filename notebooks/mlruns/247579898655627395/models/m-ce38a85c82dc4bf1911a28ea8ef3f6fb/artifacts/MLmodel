@@ -1,0 +1,37 @@
+artifact_path: file:///c:/Users/Lay/projects/churn-prediction/notebooks/mlruns/247579898655627395/models/m-ce38a85c82dc4bf1911a28ea8ef3f6fb/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: m-ce38a85c82dc4bf1911a28ea8ef3f6fb
+model_size_bytes: 1525
+model_uuid: m-ce38a85c82dc4bf1911a28ea8ef3f6fb
+prompts: null
+run_id: f39b067aeb404a3da86a79bce3b3fe9a
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "signup_days_ago", "required": true}, {"type":
+    "double", "name": "last_active_days_ago", "required": true}, {"type": "double",
+    "name": "num_logins_last_month", "required": true}, {"type": "double", "name":
+    "avg_session_length", "required": true}, {"type": "double", "name": "num_support_tickets",
+    "required": true}, {"type": "double", "name": "is_premium", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-28 23:53:21.934002'

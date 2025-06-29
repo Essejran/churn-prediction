@@ -1,0 +1,22 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "signup_days_ago",
+      "last_active_days_ago",
+      "num_logins_last_month",
+      "avg_session_length",
+      "num_support_tickets",
+      "is_premium"
+    ],
+    "data": [
+      [
+        805.0,
+        89.0,
+        5.0,
+        17.05,
+        2.0,
+        0.0
+      ]
+    ]
+  }
+}

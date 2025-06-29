@@ -34,6 +34,8 @@ To simulate and analyze churn prediction models under different class imbalance 
 - `xgboost`
 - `imblearn` (for SMOTE)
 
+📌 This is a work in progress. Folder structure and final organization will evolve as the project grows.s
+
 ## 📦 How to Run
 
 Install dependencies:
@@ -42,8 +44,6 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
-
-📌 This is a work in progress. Folder structure and final organization will evolve as the project grows.
 
 #### Choice Of Base Model & Evaluation Metrics:
 
@@ -81,7 +81,7 @@ Choose metrics based on current priority
         
 ---  
   
-### 🔥 How Rare Is "Rare"? Hold My Stake
+##### 🔥 How Rare Is "Rare"? Hold My Stake
 | Churn Rate | Model                                         | Technique                     | Key Metric                |
 | ---------- | --------------------------------------------- | ----------------------------- | ------------------------- |
 | **< 20%**  | `LogisticRegression(class_weight='balanced')` | Balanced class weights        | ROC AUC + F1              |
@@ -89,3 +89,27 @@ Choose metrics based on current priority
 | **< 5%**   | `SMOTE + XGBClassifier(scale_pos_weight=...)` | Advanced model + class weight | PR AUC + threshold tuning |
 
 
+#### 📊 Experiment Tracking with MLflow
+
+To ensure reproducibility and transparency across scenarios, this project uses **MLflow** for logging model parameters, evaluation metrics, and model artifacts.
+
+Each notebook run is tracked as a distinct experiment based on the churn scenario:
+
+- `Moderately imbalanced churn` (Logistic Regression with class weights)
+- `Highly imbalanced churn` (SMOTE + Logistic Regression)
+- `Rare event churn` (SMOTE + XGBoost)
+
+**Logged elements include:**
+
+- Scenario metadata (`churn_rate`, `model_type`, etc.)
+- Key metrics (`precision`, `recall`, `ROC AUC`, `PR AUC`)
+- Input examples for reproducibility
+- Model signature for schema validation
+
+All models are logged using `mlflow.sklearn.log_model()` with associated metadata to enable:
+
+- 🔁 Version control and comparisons
+- 📦 Artifact tracking for future deployment
+- 📈 Robust experiment monitoring
+
+> 🔐 *Why this matters:* MLflow enables auditability and structured decision-making, especially important in high-impact churn modeling where model updates must be tracked over time.

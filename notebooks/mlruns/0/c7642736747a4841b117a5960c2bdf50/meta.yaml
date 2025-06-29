@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/Lay/projects/churn-prediction/notebooks/mlruns/0/c7642736747a4841b117a5960c2bdf50/artifacts
+end_time: 1751156317521
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c7642736747a4841b117a5960c2bdf50
+run_name: Low Imbalance - SMOTE + StandardScaler + Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751156311028
+status: 3
+tags: []
+user_id: Lay

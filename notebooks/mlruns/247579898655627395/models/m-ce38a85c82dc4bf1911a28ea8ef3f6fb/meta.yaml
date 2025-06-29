@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/Lay/projects/churn-prediction/notebooks/mlruns/247579898655627395/models/m-ce38a85c82dc4bf1911a28ea8ef3f6fb/artifacts
+creation_timestamp: 1751154801858
+experiment_id: '247579898655627395'
+last_updated_timestamp: 1751154808159
+model_id: m-ce38a85c82dc4bf1911a28ea8ef3f6fb
+model_type: null
+name: model
+source_run_id: f39b067aeb404a3da86a79bce3b3fe9a
+status: 2
+status_message: null

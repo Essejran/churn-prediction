@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/Lay/projects/churn-prediction/notebooks/mlruns/0/f6e4af7609ee4b0d8291d1e80c6d54f5/artifacts
+end_time: 1751157472758
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f6e4af7609ee4b0d8291d1e80c6d54f5
+run_name: Rare Churn - SMOTE + XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751157472452
+status: 4
+tags: []
+user_id: Lay

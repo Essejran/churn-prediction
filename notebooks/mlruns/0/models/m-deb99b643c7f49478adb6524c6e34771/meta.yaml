@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/Lay/projects/churn-prediction/notebooks/mlruns/0/models/m-deb99b643c7f49478adb6524c6e34771/artifacts
+creation_timestamp: 1751274254166
+experiment_id: '0'
+last_updated_timestamp: 1751274267418
+model_id: m-deb99b643c7f49478adb6524c6e34771
+model_type: null
+name: model
+source_run_id: df8fef44bce34bb4a3c2a7ee47f03369
+status: 2
+status_message: null

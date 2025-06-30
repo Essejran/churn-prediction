@@ -6,6 +6,7 @@ scikit-learn>=1.0
 imblearn
 xgboost
 mlflow
+ipykernel
 
 # joblib>=1.2           # for model export
 # shap>=0.41            # for feature interpretation

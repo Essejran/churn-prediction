@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/Lay/projects/churn-prediction/notebooks/mlruns/247579898655627395/c3ea3baa7e8e416f88214f11ab9c3a4b/artifacts
+end_time: 1751314345119
+entry_point_name: ''
+experiment_id: '247579898655627395'
+lifecycle_stage: active
+run_id: c3ea3baa7e8e416f88214f11ab9c3a4b
+run_name: Moderate Imbalance - Logistic Regression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751314336064
+status: 3
+tags: []
+user_id: Lay
